@@ -182,13 +182,14 @@ spec:
       name: letsencrypt-prod
     http01: {}
 ```
+
+What you really need to careful at this step is, filling your own email address. And acme-v02 version on server tap. I spent pretty long time following older version tutorials and i dont get the reason qhy with acme-v01 doesn't work
+
 Apply it...
 
 ```
 kubectl apply -f clusterissuer.yaml
 ```
-
-What you need to careful at this step is, filling your own email address. And acme-v02 version on server tap. I spent pretty long time following older version tutorials
 
 
 **6. Run follow in order to check the status of Clusterissuer**
